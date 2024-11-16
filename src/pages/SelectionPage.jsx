@@ -11,6 +11,15 @@ const SelectionPage = () => {
   const currentStep = parseInt(step);
 
   useEffect(() => {
+    const handleRefresh = () => {
+      navigate('/');
+    };
+
+    window.addEventListener('beforeunload', handleRefresh);
+    return () => window.removeEventListener('beforeunload', handleRefresh);
+  }, [navigate]);
+
+  useEffect(() => {
     // Validate step number and team size
     if (isNaN(currentStep) || currentStep < 1 || currentStep > 6) {
       navigate('/');
