@@ -127,6 +127,25 @@ Home → Selection (1-3) → Trading → Selection (4-6) → Final Team
 - [ ] Enhanced trading mechanics
 - [ ] Multiple difficulty levels
 
+## 🚀 Deployment
+
+### Netlify Deployment
+
+1. **Build the Project**
+   ```bash
+   npm run build
+   ```
+
+2. **Deploy to Netlify**
+   - Create a new site in Netlify
+   - Connect to your GitHub repository
+   - Use these build settings:
+     - Build command: `npm run build`
+     - Publish directory: `dist`
+   - The `_redirects` file in the public folder handles routing
+
+> Note: The `_redirects` file is crucial for proper routing in Netlify. It's already included in the public folder.
+
 ## 🤝 Contributing
 
 Feel free to contribute to this project! Open issues and pull requests are welcome.
