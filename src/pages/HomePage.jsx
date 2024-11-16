@@ -35,6 +35,11 @@ const HomePage = () => {
     fetchCynthiaTeam();
   }, []);
 
+  const handleStartChallenge = () => {
+    navigate('/select/1');
+    window.location.reload();
+  };
+
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-900 flex items-center justify-center">
@@ -159,7 +164,7 @@ const HomePage = () => {
           width: '100%'
         }}>
           <button
-            onClick={() => navigate('/select/1')}
+            onClick={handleStartChallenge}
             className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full text-xl shadow-lg transform hover:scale-105 transition-all duration-200"
             style={{
               display: 'inline-block',
