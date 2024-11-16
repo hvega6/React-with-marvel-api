@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { usePokemon } from '../context/PokemonContext';
+import { useNavigate } from 'react-router-dom';
 
 const TradeSelectionPage = () => {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ const TradeSelectionPage = () => {
 
   useEffect(() => {
     // Ensure we have exactly 3 Pokemon before allowing trade
-    if (!selectedPokemon || selectedPokemon.length !== 3) {
+    if (!selectedPokemon || selectedPokemon.length < 3) {
       navigate('/');
       return;
     }
@@ -117,19 +117,27 @@ const TradeSelectionPage = () => {
         </div>
 
         {/* Action Buttons */}
-        <div className="flex justify-center gap-4">
-          <button
-            onClick={handleTrade}
-            disabled={!selectedTeamPokemon || !selectedTradePokemon}
-            className="px-8 py-4 bg-blue-600 text-white font-bold rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-blue-700 transition-colors"
-          >
-            Trade Pokemon
-          </button>
+        <div style={{ 
+          display: 'flex', 
+          gap: '32px', 
+          marginTop: '48px',
+          justifyContent: 'center',
+          width: '100%'
+        }}>
           <button
             onClick={handleSkip}
-            className="px-8 py-4 bg-gray-600 text-white font-bold rounded-lg hover:bg-gray-700 transition-colors"
+            className="bg-gray-600 hover:bg-gray-700 text-white font-bold py-8 px-16 rounded transition-colors duration-200 text-2xl"
+            style={{ minWidth: '360px' }}
           >
-            Skip Trading
+            Skip Trade
+          </button>
+          <button
+            onClick={handleTrade}
+            className="bg-red-600 hover:bg-red-700 text-white font-bold py-8 px-16 rounded transition-colors duration-200 text-2xl"
+            disabled={!selectedTeamPokemon || !selectedTradePokemon}
+            style={{ minWidth: '360px' }}
+          >
+            Trade Pokemon
           </button>
         </div>
       </div>
