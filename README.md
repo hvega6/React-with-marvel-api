@@ -80,7 +80,7 @@ const PokemonContext = {
 
 1. **Clone the Repository**
    ```bash
-   git clone [your-repo-url]
+   git clone https://github.com/hvega6/React-with-pokemon-api.git
    ```
 
 2. **Install Dependencies**
@@ -129,16 +129,16 @@ Home → Selection (1-3) → Trading → Selection (4-6) → Final Team
 
 ## 🤝 Contributing
 
-Feel free to contribute to this project! Check out our [contributing guidelines](CONTRIBUTING.md).
+Feel free to contribute to this project! Open issues and pull requests are welcome.
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ---
 
 <div align="center">
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by Hugo Vega
 
 </div>
