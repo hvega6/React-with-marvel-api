@@ -8,8 +8,6 @@
 
 > *"Face the strongest trainer in Sinnoh! Challenge Champion Cynthia and prove your worth as a Pokémon trainer!"*
 
-### 🎮 [Play Now - Live Demo](https://shimmering-travesseiro-bc7d4a.netlify.app)
-
 </div>
 
 ## ✨ Features
@@ -82,7 +80,7 @@ const PokemonContext = {
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/hvega6/React-with-pokemon-api.git
+   git clone https://github.com/hvega6/React-with-pokemon-api
    ```
 
 2. **Install Dependencies**
@@ -129,32 +127,13 @@ Home → Selection (1-3) → Trading → Selection (4-6) → Final Team
 - [ ] Enhanced trading mechanics
 - [ ] Multiple difficulty levels
 
-## 🚀 Deployment
-
-### Netlify Deployment
-
-1. **Build the Project**
-   ```bash
-   npm run build
-   ```
-
-2. **Deploy to Netlify**
-   - Create a new site in Netlify
-   - Connect to your GitHub repository
-   - Use these build settings:
-     - Build command: `npm run build`
-     - Publish directory: `dist`
-   - The `_redirects` file in the public folder handles routing
-
-> Note: The `_redirects` file is crucial for proper routing in Netlify. It's already included in the public folder.
-
 ## 🤝 Contributing
 
-Feel free to contribute to this project! Open issues and pull requests are welcome.
+Feel free to contribute to this project! Check out our [contributing guidelines](CONTRIBUTING.md).
 
 ## 📝 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
