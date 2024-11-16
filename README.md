@@ -8,6 +8,10 @@
 
 > *"Face the strongest trainer in Sinnoh! Challenge Champion Cynthia and prove your worth as a Pokémon trainer!"*
 
+<h1 align="center">
+  🎮 <a href="https://shimmering-travesseiro-bc7d4a.netlify.app" target="_blank" style="font-size: 2em;">Try the Live Demo!</a>
+</h1>
+
 </div>
 
 ## ✨ Features
