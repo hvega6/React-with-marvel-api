@@ -23,6 +23,7 @@ const FinalTeamPage = () => {
     // If there's no selected Pokemon or the team is not complete, redirect to home
     if (!selectedPokemon || selectedPokemon.length < 6) {
       navigate('/');
+      return;
     }
   }, [selectedPokemon, navigate]);
 
@@ -45,7 +46,7 @@ const FinalTeamPage = () => {
   }, []);
 
   const handleStartOver = () => {
-    window.location.reload();
+    navigate('/');
   };
 
   if (loading) {
